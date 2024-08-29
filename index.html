@@ -5,3 +5,168 @@
 <h1> hello everyone </h1>
 <h1> hello everyone </h1>
 <h1> hello everyone </h1>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+      1.  Creating Hyperlinks (<a> element):
+            Question: Explain the purpose of the <a> element in HTML and how it is used to create hyperlinks.
+            
+            The <a> (anchor) element in HTML is used to create hyperlinks, which allow users to navigate from one web page to another or to a specific part of the same page. The href attribute specifies the URL or location the link points to. For example:
+            html
+            Copy code
+            <a href="https://www.example.com">Visit Example</a>
+            Question: How can you differentiate between an external link and an internal link using the <a> element?
+            
+            An external link points to a URL outside of the current website. For example:
+            html
+            Copy code
+            <a href="https://www.example.com">Visit Example</a>
+            An internal link points to a URL within the same website. For example:
+            html
+            Copy code
+            <a href="/about.html">About Us</a>
+            Question: Create a navigation menu with links to three different sections of a single page using anchors.
+            
+            html
+            Copy code
+    </p>
+        
+            <nav>
+                <ul>
+                    <li><a href="#section1">Section 1</a></li>
+                    <li><a href="#section2">Section 2</a></li>
+                    <li><a href="#section3">Section 3</a></li>
+                </ul>
+            </nav>
+        
+            <section id="section1">
+                <h1>Section 1</h1>
+                <p>Content for section 1.</p>
+            </section>
+        
+            <section id="section2">
+                <h1>Section 2</h1>
+                <p>Content for section 2.</p>
+            </section>
+        
+            <section id="section3">
+                <h1>Section 3</h1>
+                <p>Content for section 3.</p>
+            </section>
+   
+       <p>
+        2. Linking to Other Web Pages:
+        Question: What is the difference between an absolute and relative URL?
+        
+        An absolute URL includes the full path from the protocol (e.g., http://) to the domain and specific file or page. Example:
+        html
+        Copy code
+        <a href="https://www.example.com/page.html">Example Page</a>
+        A relative URL points to a file or page relative to the current page’s location. Example:
+        html
+        Copy code
+        <a href="page.html">Page</a>
+       </p>
+       <p> 3. Linking to Email Addresses:
+        Question: Build an email subscription form with an input field for email and a "Subscribe" button that opens the user's default email client when clicked.
+        
+        </p>
+       
+            <form action="mailto:subscribe@example.com" method="post" enctype="text/plain">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+      
+      <p>
+        4. Linking to Files (PDFs, Images, etc.):
+        Question: Develop a page that has a link to download a sample PDF document. The link should open the PDF in a new tab.
+        
+        
+      </p>
+       
+            <a href="sample.pdf" target="_blank">Download Sample PDF</a>
+        
+       <p>
+        5. Creating Anchors (<a> with name or id attributes):
+            Question: Compare and contrast using the name attribute and the id attribute when creating anchors for linking within a page. Which one is preferred in modern HTML?
+            
+            The name attribute was used in older versions of HTML for anchors but is now obsolete.
+            The id attribute is preferred in modern HTML as it uniquely identifies elements and can be used for CSS styling and JavaScript manipulation.
+            html
+            Copy code
+            <a id="section1">Section 1</a>
+            Question: Design a simple website with a navigation menu that links to an "About," "Portfolio," and "Contact" page.
+            
+         
+       </p>
+       
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        
+       <p>
+        6. Creating Navigation Menus:
+        Question: What are the advantages of using an unordered list (<ul>) to create a navigation menu instead of simply styling individual links?
+        
+        Using an unordered list (<ul>) for navigation menus has several advantages:
+        Semantics: It provides a clear, semantic structure that conveys that the list is a collection of navigation links.
+        Accessibility: Screen readers and other assistive technologies can interpret lists more effectively.
+        Styling: It allows for easier styling and layout control, especially with CSS.
+       </p>
+
+
+ <p>
+    7. Ordered and Unordered List:
+        Question: Differentiate between an Ordered list and an Unordered list? Explain with example.
+        
+        Ordered List (<ol>): Items are numbered. Example:
+        html
+        Copy code
+        <ol>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ol>
+        Unordered List (<ul>): Items are bulleted. Example:
+        html
+        Copy code
+        <ul>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ul>
+        Question: What are the different types of lists in HTML?
+        
+        Ordered List (<ol>): Numbered items.
+        Unordered List (<ul>): Bulleted items.
+        Definition List (<dl>): Contains a list of terms and their descriptions. Example:
+        html
+        Copy code
+        <dl>
+            <dt>Term</dt>
+            <dd>Description</dd>
+        </dl>
+    
+ </p>
+
+
+ <label for="" id="">
+    
+    
+ </label>
+ 
+</body>
+</html>
